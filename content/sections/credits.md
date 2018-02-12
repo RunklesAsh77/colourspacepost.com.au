@@ -1,0 +1,55 @@
+---
+title: "Credits"
+date: 2018-02-05T14:35:01+11:00
+slug: credits
+draft: false
+---
+
+#### Colourspace/Freelance Credits include:
+
+- Who Do You Think You Are? (Warner Bros)
+- Food Safari Earth (Kismet Productions)
+- Disaster Capitalism (Media Stockade)
+- Look Me In The Eye (Endemol Shine)
+- Shark Tank (Endemol Shine)
+- Hell's Kitchen (ITV)
+- Destination Flavour - Singapore (SBS)
+- Donna Hay Basics To Brilliance (Lune)
+- Ready For Takeoff (FremantleMedia)
+- The Truth About Racism (Mindful Media)
+- Unreal Estate (Nine)
+- Pauline Hanson: Please Explain (CJZ)
+- The Opposition (Media Stockade)
+- Keeping Australia Alive (ITV)
+- Food Safari Fire (Kismet Productions)
+- X Factor (FremantleMedia)
+- River Cottage Australia (KEO)
+- Struggle Street (KEO)
+- Go Back To Where You Came From (CJZ)
+- Kebab Kings (CJZ)
+- triple j's Hottest 100 Official Trailer (triple j)
+- Bondi Rescue (CJZ)
+- Julia Zemiro's Home Delivery (CJZ)
+- Paddock to Plate (ITV)
+- Gold Coast Cops (McEvoy Media)
+- Gold Coast Medical (McEvoy Media)
+- Kings Cross ER (McEvoy Media)
+- Living with the Enemy (Shine)
+- Boy to Man (Seven Productions)
+- Village Vets (Screentime)
+- My Kitchen Rules (Seven Productions)
+- The Making of 10,9,8… Midnight Oil (Robert Hambling)
+- Ultimate Hottest 100 Song (triple j)
+- Destination Flavour - Japan (SBS)
+- The Block (Nine Network)
+- So You Think You Can Dance (Shine)
+- The Voice (Shine)
+- Australia's Got Talent (FremantleMedia)
+- In Their Footsteps (Shine)
+- Celebrity Apprentice (FremantleMedia)
+- Inland Heart: The Photography of Jeff Carter (Catherine Hunter Productions)
+- Margaret Olley: A Life in Paint (Catherine Hunter Productions)
+- Jeffrey Smart: Master of Stillness (Catherine Hunter Productions)
+- Dark Minds (Beyond)
+- The Farmer Wants a Wife (FremantleMedia)
+- Digital Pictures (Sydney) staffer for 10 years working on long-form drama, factual TV shows, and TVCs as well as feature film mastering and restoration.

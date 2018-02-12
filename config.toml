@@ -1,0 +1,6 @@
+baseURL = "http://dev1.localhost/"
+languageCode = "en-au"
+title = "Colourspace Post"
+
+theme = "colourspacepost"
+disableKinds = ["RSS","sitemap"]

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{{ .Site.Data.colourspacepost.settings.sitetitle }} | Post-Production Sydney</title>
+        <meta name="description" content="{{ .Site.Data.colourspacepost.settings.description }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap-custom.min.css">
+        <link rel="stylesheet" href="css/main.css">
+		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    </head>
+    <body id="home">
+    	<div class="container">
+
+    		<div id="header" class="header">
+    			<div class="logo">
+	    			<img src="images/colourspace-post-logo-text.png" alt="Colourspace Post. Colour Grading &amp; On-line Editing" class="img-responsive">
+	    		</div>
+				<div class="address">
+					<span class="row1">
+						<span>{{ .Site.Data.colourspacepost.settings.address1 }}</span>
+						<span>{{ .Site.Data.colourspacepost.settings.address2 }}</span>
+					</span>
+					<span class="row1">
+						<span><strong>T</strong> {{ .Site.Data.colourspacepost.settings.telephone }}</span>
+						<span><a href="mailto:{{ .Site.Data.colourspacepost.settings.email }}">{{ .Site.Data.colourspacepost.settings.email }}</a></span>
+					</span>
+				</div>
+				<div class="down-arrow">
+					<a href="#about"><img src="images/down-arrow.png"></a>
+				</div>
+	    	</div>
+
+			<nav id="mainmenu" class="navbar navbar-inverse" role="navigation">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<img src="images/white-arrow.png" height="18">
+					</button>
+					<a class="navbar-brand" href="#home">Colourspace Post</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="#home" class="hidden">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#technical">Technical</a></li>
+						<li><a href="#credits">Credits</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<div class="content">
+
+				<div class="section-container" id="about">
+					<div class="section">
+
+						{{ range where .Data.Pages "Slug" "about" }}
+							<h2>{{ .Title }}</h2>
+							{{ .Content}}
+						{{ end }}
+
+					</div>
+
+					<div class="row">
+						{{ range where .Data.Pages "Slug" "about" }}
+						{{ range .Params.studio_images }}
+						<div class="col-sm-6"><img src="{{ index . 0 }}" class="img-responsive" alt="{{ index . 1 }}"></div>
+						{{ end }}
+						{{ end }}
+					</div>
+
+					<br>
+
+					<div class="row">
+						{{ range where .Data.Pages "Slug" "about" }}
+						{{ range .Params.work_images }}
+						<div class="col-xs-6 col-sm-3"><img src="{{ index . 0 }}" class="img-responsive" alt="{{ index . 1 }}"></div>
+						{{ end }}
+						{{ end }}
+					</div>
+
+				</div>
+
+				<div class="section-container" id="technical">
+					<div class="section">
+						{{ range where .Data.Pages "Slug" "technical" }}
+							<h2>{{ .Title }}</h2>
+							{{ .Content}}
+						{{ end }}
+
+					</div>
+				</div>
+
+				<div class="section-container" id="credits">
+					<div class="section">
+							{{ range where .Data.Pages "Slug" "credits" }}
+								<h2>{{ .Title }}</h2>
+								{{ .Content}}
+							{{ end }}
+					</div>
+				</div>
+
+				<div class="section-container" id="contact">
+					<div class="section">
+						<h2>Contact</h2>
+						<h3>{{ .Site.Data.colourspacepost.settings.sitetitle }}</h3>
+						<p>{{ .Site.Data.colourspacepost.settings.address1 }} {{ .Site.Data.colourspacepost.settings.address2 }}</p>
+							<a href="mailto:{{ .Site.Data.colourspacepost.settings.email }}">{{ .Site.Data.colourspacepost.settings.email }}</a></p>
+						<p><strong>{{ .Site.Data.colourspacepost.settings.name }}</strong><br>
+							<strong>M</strong> {{ .Site.Data.colourspacepost.settings.telephone }}</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="footer">
+				<div class="footer-row clearfix">
+					<div>
+						© {{ now.UTC.Year }} {{ .Site.Data.colourspacepost.settings.sitetitle }} 
+					</div>
+					<div>
+						<a href="#home">Back to Top</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+        <script src="js/jquery-1.10.2.min.js"></script>
+
+        <script src="js/bootstrap-custom.min.js"></script>
+		<script src="js/application.js"></script>
+		<script>
+		if (window.netlifyIdentity) {
+			window.netlifyIdentity.on("init", user => {
+			if (!user) {
+				window.netlifyIdentity.on("login", () => {
+				document.location.href = "/admin/";
+				});
+			}
+			});
+		}
+		</script>
+
+    </body>
+</html>

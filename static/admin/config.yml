@@ -1,0 +1,58 @@
+backend:
+  name: github
+  repo: RunklesAsh77/dev1
+
+media_folder: "static/images"
+public_folder: "/images"
+
+collections:
+  - name: "settings"
+    label: "Settings"
+    delete: false
+    files:
+      - label: "General Settings"
+        name: "general-settings"
+        file: "themes/colourspacepost/data/colourspacepost/settings.toml"
+        fields:
+          - {label: "Site Title", name: "sitetitle", widget: "string"}
+          - {label: "Tagline", name: "tagline", widget: "string"}
+          - {label: "Meta Description", name: "description", widget: "text"}
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "Address 1", name: "address1", widget: "string"}
+          - {label: "Address 2", name: "address2", widget: "string"}
+          - {label: "Telephone", name: "telephone", widget: "string"}
+          - {label: "Email", name: "email", widget: "string"}
+  - name: "pages"
+    label: "Pages"
+    delete: false
+    create: false
+    files:
+      - label: "About"
+        name: "about"
+        file: "content/sections/about.md"
+        fields: 
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Date", name: "date", widget: "hidden"}
+          - {label: "Slug", name: "slug", widget: "hidden"}
+          - {label: "Draft", name: "draft", widget: "hidden"}
+          - {label: "Studio Images", name: "studio_images", widget: "hidden"}
+          - {label: "Work Images", name: "work_images", widget: "hidden"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Technical"
+        name: "technical"
+        file: "content/sections/technical.md"
+        fields: 
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Date", name: "date", widget: "hidden"}
+          - {label: "Slug", name: "slug", widget: "hidden"}
+          - {label: "Draft", name: "draft", widget: "hidden"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Credits"
+        name: "credits"
+        file: "content/sections/credits.md"
+        fields: 
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Date", name: "date", widget: "hidden"}
+          - {label: "Slug", name: "slug", widget: "hidden"}
+          - {label: "Draft", name: "draft", widget: "hidden"}
+          - {label: "Body", name: "body", widget: "markdown"}
