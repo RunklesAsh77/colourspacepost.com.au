@@ -1,5 +1,5 @@
 ---
-title: About1
+title: About
 date: 2018-02-05T03:30:00.000Z
 slug: about
 draft: false
