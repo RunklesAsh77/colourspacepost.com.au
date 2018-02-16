@@ -10,7 +10,7 @@
 
 }
 
-.affix {
+/* .affix {
 	position: fixed !important;
 	top: 0;
 	left: auto;
@@ -21,7 +21,7 @@
 
 .affix + .content {
 	padding-top: 96px;
-}
+} */
 
 body {
 	font-family: "Abel", sans-serif;
@@ -38,8 +38,6 @@ a:active {
 	color: #000;
 }
 
-body {
-}
 .container {
 	width: auto;
 	max-width: 1020px;
@@ -105,7 +103,8 @@ body {
 }
 
 .navbar {
-	position: relative;
+	position: sticky;
+	top: 0;
 	z-index: 10000;
 	padding-top: 30px;
 	margin-left: -15px;
@@ -146,8 +145,8 @@ body {
 	background-color: #fff;
 }
 .section-container {
-	margin: -96px -15px 20px;
-	padding: 96px 15px 20px;
+	margin: 0 -15px 20px;
+	padding: 0 15px 20px;
 	border-bottom: 2px solid #000;
 }
 .section-container:last-child {
